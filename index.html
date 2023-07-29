@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Website</title>
+
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- tailwind custom class -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'body-color': '#071952',
+                    'btn-color': '#75C2F6',
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .background {
+        background-image: url(images/background2.jpg);
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: contain;
+    }
+</style>
+
+<body class="font-poppins bg-body-color">
+    <!-- header section -->
+    <header>
+        <!-- nav section -->
+        <nav class="mx-5">
+            <div class="navbar bg-white container mx-auto rounded-3xl shadow-2xl">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Clubs</a></li>
+                            <li><a>World Cup 2023</a></li>
+                            <li><a>Upcoming Matches</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl"><img class="w-36" src="images/Logo.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-bold">
+                        <li><a>Home</a></li>
+                        <li><a>Clubs</a></li>
+                        <li><a>World Cup 2023</a></li>
+                        <li><a>Upcoming Matches</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end mx-5">
+                    <div class="btn flex bg-body-color border-0">
+                        <img class="w-5" src="images/Social Icons/login.png" alt="">
+                        <p class="text-white font-bold bg-">Login</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- banner section -->
+        <section class="mx-5">
+            <div class="container mx-auto">
+                <div class="flex justify-between flex-col lg:flex-row">
+                    <div class="lg:py-44 py-24">
+                        <h1 class="text-5xl lg:text-7xl font-bold text-center lg:text-start text-white">Conmebol <br>
+                            Copa America <br>
+                            2021</h1>
+                        <p class="py-6 text-white text-center lg:text-start">Provident cupiditate voluptatem et in.
+                            Quaerat fugiat <br> ut
+                            assumenda
+                            excepturi
+                            exercitationem
+                            quasi. In deleniti eaque <br> aut repudiandae et a id nisi.</p>
+                        <div class="btn bg-btn-color border-0 flex w-full lg:w-44 justify-center">
+                            <p class="text-white font-bold">Watch Live</p>
+                            <img class="w-5" src="images/Social Icons/login.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/banner.png" class="lg:max-w-3xl lg:mt-16" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- main section -->
+    <main>
+        <!-- card section -->
+        <section class="mx-5">
+            <div class="container mx-auto mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- card-1 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-1.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Neymar Jr</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-2.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Lionel Messi</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-3.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Cristiano Ronaldo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-4 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-4.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Paulo Dybala</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-5 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-5.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Mesut Ozil</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-6 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-6.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Mauro Icardi</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-7 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-7.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Di Maria</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-8 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-8.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Kylian Mbappé</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+
+                <!-- card-9 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="p-5 hover:animate-pulse" src="images/players/player-9.png" alt="" />
+                    </figure>
+                    <div class="p-5 mb-6">
+                        <h2 class="text-3xl font-bold mb-5">Mohamed Salah</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus at.dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi
+                            lectus</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- All Highlights section -->
+        <section class=" background">
+            <div class="mx-5">
+                <div class="container mx-auto">
+                    <div class="flex flex-col lg:flex-row my-32 lg:mt-44 py-24">
+                        <div class="text-white flex-1 flex flex-col justify-center text-center lg:text-start">
+                            <h2 class="text-5xl font-bold my-8 text-center lg:text-start">All Highlights <br>
+                                Copa America 2021</h2>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat
+                                duis enim velit
+                                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="btn bg-btn-color border-0 my-10 lg:w-44 w-full">
+                                <p class="text-white font-bold bg-">Watch Now</p>
+                                <img class="w-5" src="images/Social Icons/login.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <img class="rounded-2xl" src="images/match.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Matches Highlights -->
+        <section class="mx-5">
+            <div class=" container mx-auto mb-28">
+                <div class="text-white flex-1 flex flex-col my-16">
+                    <h2 class="text-5xl font-bold my-8 text-center">Top Matches Highlights</h2>
+                    <p class="text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint. <br>
+                        Velit officia
+                        consequat
+                        duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- card-1 -->
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="p-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/gUOPOXo50pU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-5 mb-6">
+                            <h2 class="text-3xl font-bold mb-5">Argentina Vs Brasil</h2>
+                            <p>Copa America Final 2021, Argentina vs Brazil Highlights: Argentina beat Brazil 1-0 in
+                                Copa
+                                America final</p>
+                        </div>
+                    </div>
+
+
+                    <!-- card-2 -->
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="p-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/h4m68r8kWAc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-5 mb-6">
+                            <h2 class="text-3xl font-bold mb-5">FCB Vs PSG</h2>
+                            <p>FCB overcame a four-goal deficit in the second leg of their 2016–17 UEFA Champions League
+                                against PSG.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- card-3 -->
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="p-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/L3SSkZELrHc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-5 mb-6">
+                            <h2 class="text-3xl font-bold mb-5">FCB vs RM</h2>
+                            <p>Relive the insane Barça 5-0 Madrid at Camp Nou from 2010 with Guardiola & Mourinho on the
+                                benches.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- card-4 -->
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="p-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/PMGOJ0OrKFI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-5 mb-6">
+                            <h2 class="text-3xl font-bold mb-5">Juv vs RM</h2>
+                            <p>Ronaldo brilliance puts Madrid in charge against Juventus in UEFA Champions League Final.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- card-5 -->
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="p-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qrFPRrZLGmU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-5 mb-6">
+                            <h2 class="text-3xl font-bold mb-5">Man City vs QPR</h2>
+                            <p>Manchester City score two injury-time goals to see off 10-man QPR and win the PL title in
+                                dramatic style.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- card-6 -->
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="p-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/RTmK8O9nttY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="p-5 mb-6">
+                            <h2 class="text-3xl font-bold mb-5">ENG vs ITA</h2>
+                            <p>The Euro 2020 came to a dramatic conclusion as Italy pipped England in a penalty
+                                shootout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer section -->
+    <footer class="bg-white">
+        <div class="container mx-auto">
+            <div class="py-32">
+                <div class="flex justify-center py-10">
+                    <div class=" w-2/4">
+                        <img class="w-full" src="images/Logo.png" alt="">
+                    </div>
+                </div>
+                <ul class="flex justify-center gap-10">
+                    <li><img class="w-16" src="images/Social Icons/Dribbble.png" alt=""></li>
+                    <li><img class="w-16" src="images/Social Icons/Instagram.png" alt=""></li>
+                    <li><img class="w-16" src="images/Social Icons/Twitter.png" alt=""></li>
+                    <li><img class="w-16" src="images/Social Icons/Youtube.png" alt=""></li>
+                </ul>
+                <p class="text-center p-10">Copyright © 2022 Football</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
